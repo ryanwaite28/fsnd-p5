@@ -5,7 +5,7 @@ visit public website - http://54.71.49.86/
 
 > This is a project from Udacity's Full Stack NanoDegree Program called Linux Server configuration.
 This project demonstrates the understanding of linux servers,
-command-line interface(s), user management, file permissions and groups,
+command-line interface(s), terminal and shell, user management, file permissions and groups,
 web security, software and packages, and databases, all from a basic installation.
 
 # Installed Packages/Softwares
@@ -27,6 +27,7 @@ web security, software and packages, and databases, all from a basic installatio
 Application URL - http://54.71.49.86/ <br />
 Public IP Address - 54.71.49.86 <br />
 SSH Port - 2200 <br />
+NTP Port - 123 <br />
 
 # Overview
 
@@ -36,7 +37,9 @@ SSH Port - 2200 <br />
 * the grader has an ssh key-pair generated for ssh logging in
 * the grader user hereby acts on behalf of root user; <br />
   root user is no longer used(security measure)
+
 ### web security
+
 * remote login for root is disabled/prohibited
 * all remote logins required key-based authentication only
 * all users with sudo access will be asked for password to use sudo at least once
@@ -46,7 +49,9 @@ SSH Port - 2200 <br />
 * ntp is configured to serve on port 123
 * all necessary packages are installed and updated
 * ntp is configured to use UTC time zone
+
 ### app functionality
+
 * postgresql database is installed and used to serve data-driven results
 * the server (VM/AWS) can be accessed remotely
 * the web server is configured to serve web app (Python scripts)
