@@ -112,11 +112,11 @@ NTP Port - 123 <br />
 26. Configure Time Zone: sudo dpkg-reconfigure tzdata (Pick UTC)
 27. Configure Apache:
 * edit: sudo nano /etc/apache2/sites-enabled/000-default.conf
-* add "WSGIScriptAlias / /var/www/html/myapp.wsgi" right before "</VirtualHost>"
+* add "WSGIScriptAlias / /var/www/html/myapp.wsgi"  "<VirtualHost >"
 * create file: sudo nano /var/www/html/myapp.wsgi
 * write: <br />
    import sys<br />
-   sys.path.insert(0, '/var/www/html/catalog-two/')
+   sys.path.insert(0, '/var/www/html/catalog-two/')<br />
    from project import app as application
    <br /><br />
 
