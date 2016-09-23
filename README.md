@@ -115,11 +115,11 @@ NTP Port - 123 <br />
 * add "WSGIScriptAlias / /var/www/html/myapp.wsgi" right before "</VirtualHost>"
 * create file: sudo nano /var/www/html/myapp.wsgi
 * write: <br />
-   import sys
+   import sys<br />
    sys.path.insert(0, '/var/www/html/catalog-two/')
-
    from project import app as application
-   <br />
+   <br /><br />
+
    Then Save
 
 * get project files: git clone https://github.com/ryanwaite28/catalog-two.git
